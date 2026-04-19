@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Painting Services Toronto & GTA | Elite Edge Moving & Painting</title>
+    <meta name="description" content="Transform your space with Toronto's premier painting services. Expert interior and exterior painters, fast turnarounds, flawless finishes, fully insured.">
+    <meta name="keywords" content="painting services Toronto, interior painting GTA, exterior painting, turnover painting, professional painters">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Painting Services Toronto & GTA | Elite Edge Moving & Painting">
+    <meta property="og:description" content="Transform your space with Toronto's premier painting services. Expert interior and exterior painters, fast turnarounds, flawless finishes, fully insured.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Elite Edge Moving & Painting">
+    <meta property="og:url" content="https://www.eliteedgemovingpainting.com/painting-services.html">
+    <meta property="og:image" content="/images/elite-edge-og-image.jpg">
+    <link rel="canonical" href="https://www.eliteedgemovingpainting.com/painting-services.html">
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-lowest": "#ffffff", "surface-bright": "#fcf9f8", "outline": "#727973",
+                        "surface-container-low": "#f6f3f2", "primary": "#002505", "surface-dim": "#dcd9d9",
+                        "on-secondary": "#ffffff", "outline-variant": "#c1c8c2", "surface-container-high": "#eae7e7",
+                        "on-surface-variant": "#424843", "on-surface": "#1b1b1b", "inverse-surface": "#313030",
+                        "surface-container": "#f0eded", "on-primary-container": "#4db051", "surface-variant": "#e5e2e1",
+                        "background": "#fcf9f8", "primary-container": "#003d0c", "on-primary": "#ffffff", "surface": "#fcf9f8",
+                    },
+                    borderRadius: { DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px" },
+                    fontFamily: { headline: ["Inter"], body: ["Inter"], label: ["Inter"] },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="bg-background text-on-surface font-body">
+    <div class="page-loader"><div class="loader-spinner"></div></div>
+    <div class="progress-edge-fixed hidden lg:block"></div>
+
+    <!-- TopNavBar -->
+    <nav id="main-nav" class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-4 glass-nav shadow-[0px_24px_48px_rgba(0,0,0,0.1)]">
+        <a href="index.html" class="text-lg font-black tracking-tight text-white font-headline uppercase">ELITE EDGE — MOVING &amp; PAINTING</a>
+        <div class="hidden lg:flex gap-8 items-center">
+            <a class="text-white/90 hover:text-[#4db051] transition-colors font-headline font-normal tracking-tighter uppercase text-sm" href="index.html">Home</a>
+            <a class="text-white/90 hover:text-[#4db051] transition-colors font-headline font-normal tracking-tighter uppercase text-sm" href="moving-services.html">Moving Services</a>
+            <a class="nav-link-active font-headline font-normal tracking-tighter uppercase text-sm" href="painting-services.html">Painting Services</a>
+            <a class="text-white/90 hover:text-[#4db051] transition-colors font-headline font-normal tracking-tighter uppercase text-sm" href="turnover-services.html">Turnover Services</a>
+            <a class="text-white/90 hover:text-[#4db051] transition-colors font-headline font-normal tracking-tighter uppercase text-sm" href="about.html">About Us</a>
+            <a class="text-white/90 hover:text-[#4db051] transition-colors font-headline font-normal tracking-tighter uppercase text-sm" href="index.html#faq">FAQ</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="tel:4377771219" class="hidden sm:inline-flex bg-on-primary-container text-primary px-6 py-2 rounded-full font-bold hover:scale-105 transition-transform duration-300 active:scale-95 text-sm">Call (437) 777-1219</a>
+            <button id="hamburger-btn" class="hamburger lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-[6px]" aria-label="Menu">
+                <span class="hamburger-line block w-6 h-[2px] bg-white rounded-full origin-center"></span>
+                <span class="hamburger-line block w-6 h-[2px] bg-white rounded-full origin-center"></span>
+                <span class="hamburger-line block w-6 h-[2px] bg-white rounded-full origin-center"></span>
+            </button>
+        </div>
+    </nav>
+    <div id="mobile-overlay" class="mobile-menu-overlay fixed inset-0 bg-black/60 z-[55]"></div>
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 w-80 h-full bg-primary z-[60] flex flex-col pt-24 px-8">
+        <button class="mobile-menu-close" style="position: absolute; top: 16px; right: 20px; font-size: 30px; color: white; background: none; border: none; cursor: pointer; padding: 8px;">&times;</button>
+        <a class="mobile-nav-link text-white font-normal mobile-nav-link-adj uppercase tracking-tight py-4 border-b border-white/10 hover:text-[#4db051] transition-colors block" href="index.html">Home</a>
+        <a class="mobile-nav-link text-white font-normal mobile-nav-link-adj uppercase tracking-tight py-4 border-b border-white/10 hover:text-[#4db051] transition-colors block" href="moving-services.html">Moving Services</a>
+        <a class="mobile-nav-link text-[#4db051] font-normal mobile-nav-link-adj uppercase tracking-tight py-4 border-b border-white/10 block" href="painting-services.html">Painting Services</a>
+        <a class="mobile-nav-link text-white font-normal mobile-nav-link-adj uppercase tracking-tight py-4 border-b border-white/10 hover:text-[#4db051] transition-colors block" href="turnover-services.html">Turnover Services</a>
+        <a class="mobile-nav-link text-white font-normal mobile-nav-link-adj uppercase tracking-tight py-4 border-b border-white/10 hover:text-[#4db051] transition-colors block" href="about.html">About Us</a>
+        <a class="mobile-nav-link text-white font-normal mobile-nav-link-adj uppercase tracking-tight py-4 border-b border-white/10 hover:text-[#4db051] transition-colors block" href="index.html#faq">FAQ</a>
+        <a class="mobile-nav-link text-white font-normal mobile-nav-link-adj uppercase tracking-tight py-4 border-b border-white/10 hover:text-[#4db051] transition-colors block" href="contact.html">Contact</a>
+        <div class="mt-8"><a href="tel:4377771219" class="flex items-center justify-center gap-2 bg-on-primary-container text-primary font-black px-8 py-4 rounded-full text-lg uppercase tracking-tight"><span class="material-symbols-outlined">call</span> (437) 777-1219</a></div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section flex items-center bg-primary">
+            <div class="absolute inset-0 z-0">
+                <img class="hero-bg-image opacity-60" loading="eager" alt="Professional painter painting a modern interior wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4kC55qfUIcAR13CCUgbSbdNgYYch2DjgiNVKlUiVJvt0lPHPSlPgVDnbEfm_GecM0_MCFoLNTm_0v_lT9akUgf73eMG0cYwugiVyP-xJ9QGr7yKlQnvtlQ26ZlT2bWNPM7lUfZ3rnSfYSxot-9Oc_MeoUB0zpbSHcG-kVdUJqufxhRsBlHqSXFJgs_lz9-QXq2k2pi4f3O42T9zafwFnkhtg3Y3Oadc2lZsSIRqG-8Ywbe1i-QCvaEw-TCmUDF2M4oE7wjGiyq0k"/>
+                <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/40 to-transparent"></div>
+            </div>
+            <div class="container mx-auto px-6 md:px-12 relative z-10">
+                <div class="max-w-3xl fade-up">
+                    <h1 class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black tracking-tighter uppercase leading-[0.9] mb-8 hero-text-responsive">
+                        Painting Services — <br/><span class="text-on-primary-container">Toronto &amp; GTA</span>
+                    </h1>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3 text-white text-base sm:text-lg font-medium">
+                            <span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Interior &amp; Exterior Painting
+                        </li>
+                        <li class="flex items-center gap-3 text-white text-base sm:text-lg font-medium">
+                            <span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Fast Turnarounds, Flawless Finishes
+                        </li>
+                        <li class="flex items-center gap-3 text-white text-base sm:text-lg font-medium">
+                            <span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Experienced Painters, Fully Insured
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="flex justify-center text-center bg-on-primary-container text-primary px-10 py-5 rounded-full text-lg sm:text-xl font-black uppercase tracking-tight hover:scale-105 transition-all shadow-xl w-full sm:w-max">
+                        Get a Free Quote
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="section-padding bg-surface">
+            <div class="max-w-5xl mx-auto text-center fade-up">
+                <h2 class="font-headline fluid-heading font-black tracking-tighter uppercase text-primary mb-8 leading-tight">
+                    Transform Your Space with Elite Edge
+                </h2>
+                <p class="text-base sm:text-lg md:text-xl text-on-surface-variant leading-relaxed">
+                    At Elite Edge, we don't just apply paint; we redefine structures. Our precision-focused approach combines high-grade materials with architectural expertise to deliver a finish that stands the test of time. Whether it's a sleek modern interior or a rugged exterior overhaul, our crew treats every stroke with professional reverence.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3-Column Service Cards -->
+        <section class="section-padding bg-surface pt-0">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group bg-surface-container-low rounded-lg overflow-hidden flex flex-col hover:shadow-ambient transition-all duration-500 fade-up">
+                    <div class="h-48 sm:h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" alt="Interior painting with premium finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmK8s5Mm2qWpFSpANFssLxJPmPN9IPkf48wMjtPXWfGnKZ1I2DxwgSE19Zo3OB-CzQrSgesW1BoIrWncLQ1M9x0AiY6saNJ1ygZGTSoqvuMilTqyr_i75Wo2RUGDLJtPNG1whMBJEQd8emo3Ssyhq8BecIVA6N4-3LMfOFD7_r7BF3mmP-V-YayKbvK9j6goaPlKJty5jYTKThvLZULtb3-TsoslZJmpkTLs9iKIRCNQ0KAFfno9_BH0ZpMYcmGWpSRY3s2HRAYTc"/>
+                    </div>
+                    <div class="p-6 sm:p-8 flex flex-col flex-grow">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-on-primary-container">brush</span>
+                            <h3 class="text-xl sm:text-2xl font-black uppercase tracking-tight text-primary">Interior Painting</h3>
+                        </div>
+                        <p class="text-on-surface-variant mb-6 flex-grow">Premium walls, ceilings, and trim finishes. We handle delicate prep work and protect your assets with meticulous care.</p>
+                        <a class="text-primary font-bold inline-flex items-center gap-2 group-hover:text-on-primary-container transition-colors uppercase text-sm tracking-widest" href="contact.html">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="group bg-surface-container-low rounded-lg overflow-hidden flex flex-col hover:shadow-ambient transition-all duration-500 fade-up delay-100">
+                    <div class="h-48 sm:h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" alt="Exterior house painting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU_iz5PSxUsHyibR8hfsRHx4PcyWhoIu8R2olRaNKYXEXAQ2IPXE6VThWCvhoOjeYEcj4N8rISKpaLGN__StUr0js2IOxgbNwgnaSg3KPIgy7TtB_bUzT8r15NaTgo_BeXssty2w8n74rsW3u8hPbWN1NNCxR5rEFLZJ-xBFJQrhzfNgyeCc-tYY17sIiFVMggrVQ96RuBe2YNt8FTryN7Be-57LyUzG99ZJAePGuDbVOjhVqroKYp7eL9uM4EcyO-jLcaQBUzVeo"/>
+                    </div>
+                    <div class="p-6 sm:p-8 flex flex-col flex-grow">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-on-primary-container">home</span>
+                            <h3 class="text-xl sm:text-2xl font-black uppercase tracking-tight text-primary">Exterior Painting</h3>
+                        </div>
+                        <p class="text-on-surface-variant mb-6 flex-grow">Weather-resistant coatings for brick, siding, and wood. Enhance your property's curb appeal with professional-grade durability.</p>
+                        <a class="text-primary font-bold inline-flex items-center gap-2 group-hover:text-on-primary-container transition-colors uppercase text-sm tracking-widest" href="contact.html">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="group bg-surface-container-low rounded-lg overflow-hidden flex flex-col hover:shadow-ambient transition-all duration-500 fade-up delay-200">
+                    <div class="h-48 sm:h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" alt="Apartment turnover painting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1QFjZU3zZvnH6AS810MsmVKlzKE-jp1SqrvPE5JuikOIEATHZZ6koFv0msGE4nmN-d31HN-lWG5sfwVhueLkP6wxc9c2tHSsbCRWBPuGSA2E4125orYqoFYZ18m8SOrgujkeY1f9PUr3YHROLdZTE9EOmCmCa7d_P88CqLx4Rr4VB9Yhvr0K0_1ZEXRWFO09djaXoiAIrs_P-NBlv6k5pfwE44JDBzp8jjPyQ1HdXzDNi8IqDFffDjDeYL9WjsM7jul0ayR5Zkpw"/>
+                    </div>
+                    <div class="p-6 sm:p-8 flex flex-col flex-grow">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-on-primary-container">published_with_changes</span>
+                            <h3 class="text-xl sm:text-2xl font-black uppercase tracking-tight text-primary">Turnover Painting</h3>
+                        </div>
+                        <p class="text-on-surface-variant mb-6 flex-grow">High-speed, high-quality painting for landlords and property managers. We get units ready for market in record time.</p>
+                        <a class="text-primary font-bold inline-flex items-center gap-2 group-hover:text-on-primary-container transition-colors uppercase text-sm tracking-widest" href="contact.html">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Precision Standards -->
+        <section class="section-padding bg-surface-container-low overflow-hidden">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
+                <div class="w-full md:w-1/2 fade-left">
+                    <h2 class="font-headline fluid-heading font-black tracking-tighter uppercase text-primary mb-10 leading-tight">
+                        Our Precision <br/>Standards
+                    </h2>
+                    <div class="space-y-6 sm:space-y-8">
+                        <div class="flex items-start gap-4 sm:gap-6 p-4 sm:p-6 bg-surface-container-lowest rounded-lg border-l-4 border-on-primary-container">
+                            <span class="material-symbols-outlined text-primary text-3xl">speed</span>
+                            <div>
+                                <h4 class="text-lg sm:text-xl font-bold text-primary mb-1">Units ready in 24-48h</h4>
+                                <p class="text-on-surface-variant text-sm sm:text-base">Rapid deployment for turnover projects without sacrificing edge-to-edge quality.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 sm:gap-6 p-4 sm:p-6 bg-surface-container-lowest rounded-lg border-l-4 border-on-primary-container">
+                            <span class="material-symbols-outlined text-primary text-3xl">schedule</span>
+                            <div>
+                                <h4 class="text-lg sm:text-xl font-bold text-primary mb-1">Quick turnarounds</h4>
+                                <p class="text-on-surface-variant text-sm sm:text-base">Scheduled to minimize disruption to your daily life or business operations.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 sm:gap-6 p-4 sm:p-6 bg-surface-container-lowest rounded-lg border-l-4 border-on-primary-container">
+                            <span class="material-symbols-outlined text-primary text-3xl">build</span>
+                            <div>
+                                <h4 class="text-lg sm:text-xl font-bold text-primary mb-1">Drywall repair</h4>
+                                <p class="text-on-surface-variant text-sm sm:text-base">From patching holes to fixing cracks, we ensure a smooth foundation before any paint is applied.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 relative fade-right">
+                    <div class="absolute -top-10 -right-10 w-64 h-64 bg-on-primary-container/20 rounded-full blur-3xl"></div>
+                    <img class="rounded-lg relative z-10 shadow-2xl w-full" loading="lazy" alt="Modern geometric wall painting design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUjTuk9S6xmJF1taf3H9k2dZd7j193OtlIQpPl4AMMJyCI-L9w_TNn4qD-SEorLvwNoJ3uSr7JvPn2TojGwiOTmYKOt53_99JV0TrYBMyJ9G5lozoijgeO3JUZMJ-v8OZ9R_bo4QHCNSI-4h1Bzyi3gutxLl-8Wk8K52raC0oNsgt5AAQ4r21OnQChHhGss_rlWOmFXeBqiHxwgHn6NYP49MjaSzYnDCvGadgqPRAs5useAJuAZB4U7vcdwtGyVEPdh18VFcCiS-k"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Bar -->
+        <section class="bg-primary section-padding border-t border-white/5">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-6 sm:gap-8">
+                <div class="flex flex-col lg:flex-row justify-center lg:justify-start items-center gap-4 sm:gap-8 lg:gap-12 w-full lg:w-auto">
+                    <div class="text-white font-black text-lg sm:text-xl tracking-tight uppercase">ELITE EDGE</div>
+                    <div class="flex items-center gap-2 text-white/90 font-bold uppercase tracking-widest text-xs">
+                        <span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        Experienced Painters
+                    </div>
+                    <div class="flex items-center gap-2 text-white/90 font-bold uppercase tracking-widest text-xs">
+                        <span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        Fully Insured
+                    </div>
+                    <div class="flex items-center gap-2 text-white/90 font-bold uppercase tracking-widest text-xs">
+                        <span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        Detailed &amp; Neat
+                    </div>
+                </div>
+                <a class="group flex items-center justify-center gap-4 bg-on-primary-container text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-full font-black uppercase tracking-tight hover:scale-105 transition-transform text-sm sm:text-base w-full lg:w-max" href="tel:4377771219">
+                    Call Now: (437) 777-1219
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">call</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-16 sm:py-20 px-6 md:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+            <div>
+                <div class="text-2xl font-black text-white mb-4">ELITE EDGE — MOVING &amp; PAINTING</div>
+                <p class="text-white/60 text-sm leading-relaxed max-w-sm">Premium transformation services for Toronto and the Greater Toronto Area. We bring architectural precision to every move and every coat of paint.</p>
+            </div>
+            <div>
+                <h4 class="text-on-primary-container font-black uppercase tracking-widest text-xs mb-6">Quick Links</h4>
+                <div class="flex flex-col gap-4">
+                    <a class="text-white/60 hover:text-white transition-colors text-sm" href="index.html">Home</a>
+                    <a class="text-white/60 hover:text-white transition-colors text-sm" href="moving-services.html">Moving Services</a>
+                    <a class="text-white/60 hover:text-white transition-colors text-sm" href="turnover-services.html">Turnover Services</a>
+                    <a class="text-white/60 hover:text-white transition-colors text-sm" href="about.html">About Us</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-on-primary-container font-black uppercase tracking-widest text-xs mb-6">Contact &amp; Legal</h4>
+                <div class="flex flex-col gap-4">
+                    <a class="text-white/60 hover:text-white transition-colors text-sm" href="contact.html">Contact Us</a>
+                    <a class="text-white/60 hover:text-white transition-colors text-sm" href="#">Instagram</a>
+                    <a class="text-white/60 hover:text-white transition-colors text-sm" href="#">Privacy Policy</a>
+                    <a class="text-white/60 hover:text-white transition-colors text-sm" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 sm:mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-white/60 text-sm">© 2026 Elite Edge Moving &amp; Painting. All rights reserved.</p>
+            <div class="flex gap-6">
+                <span class="material-symbols-outlined text-white/40">local_shipping</span>
+                <span class="material-symbols-outlined text-white/40">format_paint</span>
+                <span class="material-symbols-outlined text-white/40">apartment</span>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top"><span class="material-symbols-outlined">arrow_upward</span></button>
+    <script src="js/main.js"></script>
+</body>
+</html>

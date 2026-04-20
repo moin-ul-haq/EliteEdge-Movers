@@ -4,7 +4,9 @@
    ============================================ */
 
 /* --- Base & Reset --- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -53,7 +55,11 @@ body {
 }
 
 .hero-gradient-right {
-    background: linear-gradient(to right, rgba(0, 37, 5, 0.9), rgba(0, 37, 5, 0.4), transparent);
+    background: linear-gradient(to right,
+            rgba(10, 40, 20, 0.92) 0%,
+            rgba(10, 40, 20, 0.92) 50%,
+            rgba(10, 40, 20, 0.20) 75%,
+            transparent 100%);
 }
 
 /* --- CTA Glow Effect --- */
@@ -138,7 +144,7 @@ body {
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .fade-up.visible {
@@ -150,7 +156,7 @@ body {
     opacity: 0;
     transform: translateX(-40px);
     transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .fade-left.visible {
@@ -162,7 +168,7 @@ body {
     opacity: 0;
     transform: translateX(40px);
     transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .fade-right.visible {
@@ -171,10 +177,21 @@ body {
 }
 
 /* Stagger delays */
-.delay-100 { transition-delay: 0.1s; }
-.delay-200 { transition-delay: 0.2s; }
-.delay-300 { transition-delay: 0.3s; }
-.delay-400 { transition-delay: 0.4s; }
+.delay-100 {
+    transition-delay: 0.1s;
+}
+
+.delay-200 {
+    transition-delay: 0.2s;
+}
+
+.delay-300 {
+    transition-delay: 0.3s;
+}
+
+.delay-400 {
+    transition-delay: 0.4s;
+}
 
 /* --- Back to Top Button --- */
 .back-to-top {
@@ -246,8 +263,13 @@ body {
     position: relative;
     overflow: hidden;
     margin-top: 0;
-    padding-top: 80px; /* Navbar height compensation */
-    min-height: 100vh;
+    height: 100vh;              /* Exactly one full screen — no scrolling past hero */
+    min-height: 600px;          /* Safety floor for very short viewports */
+    display: flex;
+    align-items: center;        /* Vertically center content */
+    justify-content: flex-start;
+    padding-top: 90px;          /* Clear the navbar */
+    padding-bottom: 40px;       /* Bottom breathing room */
 }
 
 .hero-bg-image {
@@ -257,41 +279,87 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transform: scaleX(-1);
+    /* Flip image horizontally — building moves from left to right side */
 }
 
 .section-padding {
-    padding: 60px 24px; /* Desktop default horizontal */
+    padding: 60px 24px;
+    /* Desktop default horizontal */
 }
 
 .mobile-nav-link-adj {
-    font-size: 1rem !important; /* 16px */
+    font-size: 1rem !important;
+    /* 16px */
     padding: 12px 20px !important;
 }
 
 @media (max-width: 1024px) {
+
+    /* --- Tablet --- */
     .section-padding {
-        padding: 40px 24px; /* Tablet */
+        padding: 40px 24px;
     }
+
     .hero-section {
-        min-height: 80vh;
+        height: 100vh;
+        min-height: 550px;
+        padding-top: 90px;
+        padding-bottom: 40px;
     }
+
+    /* object-position stays center — scaleX(-1) flip handles building placement */
 }
 
 @media (max-width: 768px) {
+
+    /* --- Mobile --- */
+    .hero-section {
+        height: 100vh;
+        min-height: 500px;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .hero-bg-image {
+        object-position: center center;
+        /* scaleX(-1) inherited from base — building stays on right on mobile too */
+    }
+
+    .hero-gradient-right {
+        /* Vertical gradient on mobile — darkens full image for text readability */
+        background: linear-gradient(to bottom,
+                rgba(10, 40, 20, 0.92) 0%,
+                rgba(10, 40, 20, 0.82) 60%,
+                rgba(10, 40, 20, 0.70) 100%);
+    }
+
     .hero-text-responsive {
-        font-size: 2.5rem !important;
+        font-size: clamp(2rem, 8vw, 2.5rem) !important;
+    }
+
+    /* About Us hero — stronger overlay on mobile for text readability */
+    .about-hero-overlay {
+        background: rgba(5, 25, 10, 0.88) !important;
     }
 }
 
 @media (max-width: 480px) {
+
+    /* --- Small Mobile --- */
     .hero-text-responsive {
-        font-size: 2rem !important;
+        font-size: clamp(1.8rem, 8vw, 2rem) !important;
     }
+
     .hero-section {
-        min-height: 60vh;
+        height: 100vh;
+        min-height: 480px;
+        padding-top: 70px;
+        padding-bottom: 30px;
     }
+
     .section-padding {
-        padding: 24px 16px; /* Mobile */
+        padding: 24px 16px;
     }
 }
 
@@ -322,15 +390,20 @@ body {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* --- Bounce Animation (for map pin) --- */
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(-25%);
         animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
     }
+
     50% {
         transform: translateY(0);
         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
@@ -440,13 +513,16 @@ body {
         width: 100%;
         box-sizing: border-box;
     }
+
     .faq-question {
         font-size: 15px;
         line-height: 1.5;
     }
+
     #faq .fluid-heading {
         font-size: clamp(1.3rem, 5vw, 2rem) !important;
     }
+
     #faq .text-on-surface-variant {
         font-size: clamp(0.85rem, 3vw, 1rem) !important;
         padding: 0 16px;
@@ -455,7 +531,12 @@ body {
 
 /* --- Print Styles --- */
 @media print {
-    .glass-nav, .back-to-top, .progress-edge-fixed, .mobile-menu, .mobile-menu-overlay {
+
+    .glass-nav,
+    .back-to-top,
+    .progress-edge-fixed,
+    .mobile-menu,
+    .mobile-menu-overlay {
         display: none !important;
     }
 }
